@@ -11,18 +11,10 @@
     let possible = true;
 
     for (let i=0; i<arr.length-1; i++) {
-        if (Math.abs(arr[i+1] - arr[i]) !== Math.abs(arr[arr.length - 1] - arr[arr.length - 2])){
-            possible = false;
-            console.log(arr);
-            console.log('Math.abs(arr[i+1] - arr[i]):', Math.abs(arr[i+1] - arr[i]));
-            console.log('Math.abs(arr[arr.length - 1] - arr[arr.length - 2]):', Math.abs(arr[arr.length - 1] - arr[arr.length - 2]));
-            console.log('arr[arr.length - 2]:', arr[arr.length - 2]);
-        };
-
+        if (Math.abs(arr[i+1] - arr[i]) !== Math.abs(arr[arr.length - 1] - arr[arr.length - 2])) possible = false;
     }
 
     return possible;
-
 };
 
 console.log(canMakeArithmeticProgression([-68,-96,-12,-40,16]));
