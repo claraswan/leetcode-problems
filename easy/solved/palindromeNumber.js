@@ -1,3 +1,5 @@
+// Given an integer x, return true if x is palindrome integer.
+
 /**
  * @param {number} x
  * @return {boolean}
